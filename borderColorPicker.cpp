@@ -30,7 +30,6 @@ BorderColorPicker::BorderColorPicker(unsigned int width, PNG& inputimage, RGBAPi
         reColor[i].resize(img.height());
         for (int j = 0; j < img.height(); j++) {
             PixelPoint t(i, j, *(img.getPixel(i, j)));
-            // cout<<(int)t.color.r<<' ';
             reColor[i][j] = PickColor(t);
         }
     }
@@ -49,11 +48,6 @@ RGBAPixel BorderColorPicker::operator()(PixelPoint p)
 {
     // Replace the line below with your implementation
     return reColor[p.x][p.y];
-    // if (reColor[p.x][p.y]) {
-    //     return bordercolor;
-    // }
-    // // cout<<(int)p.color.r<<' ';
-    // return p.color;
 }
 
 /**
