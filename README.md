@@ -1,4 +1,4 @@
-An assignment I completed in CPSC221 at UBC. The assignment was to implement a program that flood fills the background of an image using BFS or DFS. 
+An assignment I completed in CPSC221(Data structures and algorithms) at UBC. The assignment was to implement a program that uses BFS or DFS to flood fill the background of an image.
 
 I also wrote three colour picker algorithms to control how the image will be flood-filled:
 
